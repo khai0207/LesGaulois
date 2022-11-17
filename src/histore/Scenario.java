@@ -34,7 +34,7 @@ public class Scenario {
 		asterix.frapper(minus);
 
 		asterix.frapper(minus);
-a
+
 		asterix.frapper(minus);	
 	}
 
