@@ -69,6 +69,6 @@ public class Gaulois {
 	      asterix.parler("Bonjour");
 	      System.out.println("\nTest methode frapper");
 	      asterix.frapper(new Romain("Minus", 6));
-	      asterix.boirePotion(5);;A
+	      asterix.boirePotion(5);;
 	}
 }	

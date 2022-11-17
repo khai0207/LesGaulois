@@ -16,6 +16,6 @@ public class Musee {
 		texte += "]";
 		System.out.println(texte);
 	}
-A
+
 }
 }
