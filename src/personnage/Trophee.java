@@ -20,4 +20,4 @@ public class Trophee {
 	public String donnerNom(Gaulois gaulois){
 		return gaulois.getNom();
 	}
-}
+}A

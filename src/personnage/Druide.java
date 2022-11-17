@@ -50,6 +50,6 @@ public class Druide {
 	public static void main(String[] args) {
 		Druide panoramix = new Druide("panoramix", 5, 10);
 		panoramix.preparerPotion();
-	}
+	}A
 
 }
