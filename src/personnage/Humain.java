@@ -7,7 +7,6 @@ public class Humain {
 	private final int MaxConnaissances = 30;
 	private Humain [] connex = new Humain[MaxConnaissances];
 	public int argent;
-	private int cpt = 0;
 	
 	
 
@@ -20,16 +19,15 @@ public class Humain {
 		return boisson;
 	}
 	
-	public void setBoisson(String boisson) {
-		this.boisson = boisson;
-	}
-
-
 	public int getArgent() {
 		return argent;
 	}
 	
-		
+	public void setBoisson(String boisson) {
+		this.boisson = boisson;
+	}
+
+			
     public void setArgent(int argent) {
 		this.argent = argent;
 	}
@@ -106,12 +104,5 @@ public class Humain {
 		}
 	}
 
-
-	public static void main(String[] args) {
-		Humain h1 = new Humain("Ali", "Orangina", 56);
-		h1.perdreArgent(6);
-		System.out.println(h1.argent);
-
-	}
 
 }

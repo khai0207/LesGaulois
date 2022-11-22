@@ -1,34 +1,23 @@
-
 package personnage;
 
-import personnage.Humain;
+public class Commercant extends Humain {
 
-public class Commercant extends Humain{
-
-	public Commercant(String nom, String boisson, int argent) {
-		super(nom, boisson, argent);
-		this.setBoisson("the");
-	
+	public Commercant(String nom, int argent) {
+		super(nom, "The", argent);
 	}
-	
+
 	public void seFaireExtorquer() {
-		this.setArgent(0);
-		this.parler("J'ai tout perdu, le monde est trop injuste");
+		this.perdreArgent(getArgent());
+		String texte = "J'ai tout perdu! Le monde est trop injuste";
+		parler(texte);
 	}
 	
-	public void recevoirArgent(int i ) {
-		this.setArgent(i);
-		this.parler(i + " sous ! Je te remercie, genereux donateur !");
-	}
-	
-	public static void main(String[] args) {
-		Commercant c1 = new Commercant("Marco", "undefined", 15);
-		System.out.println(c1.argent);
-		c1.seFaireExtorquer();
-		System.out.println(c1.argent);
-		c1.recevoirArgent(4445);
-		System.out.println(c1.argent);
-		
+	public void recevoir(int argent) {
+		String texte = "";
+		texte += argent;
+		texte += " sous! Je te remerci généreux donnateur!";
+		parler(texte);
+		this.gagnerArgent(argent);
 	}
 		
 }

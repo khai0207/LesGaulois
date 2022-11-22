@@ -12,7 +12,7 @@ public class Ronin extends Humain{
 	public void don(Commercant c) {
 		c.setArgent(c.argent + (getArgent()*10)/100);
 		parler(c.getNom() + ", prend ces " + (getArgent()*10)/100 + " sous");
-		c.recevoirArgent((getArgent()*10)/100);
+		c.recevoir((getArgent()*10)/100);
 	}
 	
 	public void provoquer(Yakuza yak) {
@@ -28,14 +28,5 @@ public class Ronin extends Humain{
 			honneur -=1;
 		}
 	}
-
-
-	public static void main(String[] args) {
-		Commercant c1 = new Commercant("Marco", "undefined", 15);
-		Ronin ron = new Ronin("Roro", "shoshu", 60);
-		
-		ron.don(c1);
-
-	}
-
 }
+
